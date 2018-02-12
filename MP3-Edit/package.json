@@ -1,0 +1,18 @@
+{
+  "name": "mp3-edit",
+  "version": "1.0.0",
+  "description": "Edit MP3 tags",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mp3",
+    "ffmpeg"
+  ],
+  "author": "Mattepuffo",
+  "license": "ISC",
+  "dependencies": {
+    "ffmetadata": "*"
+  }
+}

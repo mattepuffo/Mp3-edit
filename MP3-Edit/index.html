@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>MP3-Edit</title>
+  <link rel="stylesheet" href="./bulma-0.6.0/css/bulma.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body id="body">
+  <section class="section">
+    <div class="container">
+      <div id="err_not" class="notification is-danger">
+        <button class="delete" onclick="document.getElementById('err_not').style.display = 'none';"></button>
+        <span id="err"></span>
+      </div>
+      <script>
+        const funcs = require("./script.js");
+        funcs.initDrop();
+      </script>
+      <div class="field">
+        <label class="label">Titolo</label>
+        <div class="control">
+          <input class="input" id="titolo" type="text">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Autore</label>
+        <div class="control">
+          <input class="input" id="autore" type="text">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Album</label>
+        <div class="control">
+          <input class="input" id="album" type="text">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Track</label>
+        <div class="control">
+          <input class="input" id="track" type="text">
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Etichetta</label>
+        <div class="control">
+          <input class="input" id="etichetta" type="text">
+        </div>
+      </div>
+    </div>
+    <br><br>
+    <button class="button is-dark" id="btn_salva" onclick="funcs.setMp3();">Salva</button>
+  </section>
+</body>
+
+</html>
